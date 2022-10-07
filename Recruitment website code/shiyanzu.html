@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <!-- Link Swiper's CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css">
+
+     <!-- Demo styles -->
+    <style>
+     
+     .box1{text-align: center;}
+     .box2{text-indent:2em;
+           font-size:20px;
+           font-wight:10px;}
+     .box3{
+           margin-left: 80px;
+     }
+     body {
+        background: #fff;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color:#000;
+        margin: 0;
+        padding: 0;
+    }
+    .swiper-container {
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 300px;
+        height: 300px;
+
+    }
+    
+    </style>
+</head>
+<body>
+      <div class='box1'><h1>实验组</h1></div>
+      <h2>研究方向：</h2>
+      <div class='box2'>1.乳酸菌益生功能研究，2.联合固氮微生物的功能基因组学研究，3.微生物CRISPR系统研究与
+        CRISPR编辑载体构建。</div>
+      <h2>实验一主要内容：</h2>
+      <div class='box2'>通过对施氏假单胞菌（Pseudomonas Schisterii）A1501中LuxR家族调控蛋白基因进行处理使其过度表达或者
+      不表达以探索LuxR家族调控蛋白基因对A1501菌中植物促生作用相关的生物学特性（如生物膜形成、趋化运动以及对
+      自身生长特性的影响等等）的调控作用，为植物促生菌P. stutzeri A1501的在农业生产上的更好应用提供科学依据
+      ，同时也为P. stutzeri中QS系统的相关研究提供科学参考。</div>
+      <h2>实验照片：</h2>
+      <img src="images/shiyanzu/1.jpg" title="转接菌落" width="600" height="450">
+      <span class='box3'><img src="images/shiyanzu/2.jpg" title="转接菌落" width="500" height="450"></span>
+      <h2>实验二主要内容：</h2>
+      <div class='box2'>乳酸菌分离筛选、乳酸菌抑菌实验、乳酸菌耐酸实验、乳酸菌耐胆盐实验、乳酸菌模拟胃液实验、乳酸菌模拟肠液、
+        乳酸菌药敏实验。</div>
+      <h2>实验照片：</h2>
+    <!-- Swiper -->
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+          <div class="swiper-slide" style="background-image:url(images/shiyanzu/3.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(images/shiyanzu/4.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(images/shiyanzu/5.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(images/shiyanzu/6.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(images/shiyanzu/7.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(images/shiyanzu/8.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(images/shiyanzu/9.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(images/shiyanzu/10.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(images/shiyanzu/11.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(images/shiyanzu/12.jpg)"></div>
+      </div>
+      <!-- 如果需要分页器 -->
+      <div class="swiper-pagination"></div>
+    
+      <!-- 如果需要导航按钮 -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+  <!-- 如果需要滚动条 -->
+  <div class="swiper-scrollbar"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+  var swiper = new Swiper('.swiper-container', {
+      pagination: '.swiper-pagination',
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflow: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows : true
+      },
+      //自动播放
+      autoplay:{
+            delay:1500,
+        },
+        // 如果需要分页器
+        pagination: {
+          el: '.swiper-pagination',
+        },
+        
+    
+    // 如果需要前进后退按钮
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    
+    // 如果需要滚动条
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  });
+  </script>
+</body>
+</html>
